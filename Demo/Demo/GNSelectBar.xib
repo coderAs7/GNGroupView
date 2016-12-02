@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="quD-ye-njE" customClass="GNSelectBar">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJ6-4k-CIW">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PO-Z6-6cU">
+                            <state key="normal" title="控制器1"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.10420323200000001" blue="0.052977101220000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5PO-Z6-6cU" secondAttribute="bottom" id="Cd6-7N-yyi"/>
+                        <constraint firstItem="5PO-Z6-6cU" firstAttribute="leading" secondItem="tJ6-4k-CIW" secondAttribute="leading" id="jiO-jO-UqC"/>
+                        <constraint firstAttribute="trailing" secondItem="5PO-Z6-6cU" secondAttribute="trailing" id="kqA-9X-8Km"/>
+                        <constraint firstItem="5PO-Z6-6cU" firstAttribute="top" secondItem="tJ6-4k-CIW" secondAttribute="top" id="nla-Yx-pwB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-cR-UpG">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UZ-kx-Qee">
+                            <state key="normal" title="控制器3"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.42745098040000001" green="0.32707634229999999" blue="0.24095532720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5UZ-kx-Qee" secondAttribute="bottom" id="MZe-X7-duK"/>
+                        <constraint firstAttribute="trailing" secondItem="5UZ-kx-Qee" secondAttribute="trailing" id="Ml5-Kr-wEx"/>
+                        <constraint firstItem="5UZ-kx-Qee" firstAttribute="top" secondItem="ixl-cR-UpG" secondAttribute="top" id="fT5-sP-YK5"/>
+                        <constraint firstItem="5UZ-kx-Qee" firstAttribute="leading" secondItem="ixl-cR-UpG" secondAttribute="leading" id="hTX-f0-1EG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw3-85-uvG">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvS-sM-YjW">
+                            <state key="normal" title="控制器2"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="jvS-sM-YjW" firstAttribute="top" secondItem="Tw3-85-uvG" secondAttribute="top" id="1U9-pb-qa3"/>
+                        <constraint firstAttribute="trailing" secondItem="jvS-sM-YjW" secondAttribute="trailing" id="PCe-uT-Lyr"/>
+                        <constraint firstItem="jvS-sM-YjW" firstAttribute="leading" secondItem="Tw3-85-uvG" secondAttribute="leading" id="fQ0-gM-3UZ"/>
+                        <constraint firstAttribute="bottom" secondItem="jvS-sM-YjW" secondAttribute="bottom" id="uKE-nG-MOu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Tw3-85-uvG" firstAttribute="width" secondItem="ixl-cR-UpG" secondAttribute="width" id="0oG-jx-j10"/>
+                <constraint firstItem="ixl-cR-UpG" firstAttribute="leading" secondItem="Tw3-85-uvG" secondAttribute="trailing" id="2j1-B4-gyp"/>
+                <constraint firstItem="Tw3-85-uvG" firstAttribute="leading" secondItem="tJ6-4k-CIW" secondAttribute="trailing" id="6dB-Af-vYM"/>
+                <constraint firstItem="ixl-cR-UpG" firstAttribute="leading" secondItem="Tw3-85-uvG" secondAttribute="trailing" id="7Un-Es-LaO"/>
+                <constraint firstItem="ixl-cR-UpG" firstAttribute="top" secondItem="quD-ye-njE" secondAttribute="top" id="88a-9I-Wgw"/>
+                <constraint firstAttribute="bottom" secondItem="tJ6-4k-CIW" secondAttribute="bottom" id="BWd-E4-yUa"/>
+                <constraint firstItem="tJ6-4k-CIW" firstAttribute="width" secondItem="Tw3-85-uvG" secondAttribute="width" id="Emg-wS-ccD"/>
+                <constraint firstAttribute="bottom" secondItem="ixl-cR-UpG" secondAttribute="bottom" id="H0s-eG-9Jt"/>
+                <constraint firstItem="tJ6-4k-CIW" firstAttribute="top" secondItem="quD-ye-njE" secondAttribute="top" id="Ien-d4-GBv"/>
+                <constraint firstItem="Tw3-85-uvG" firstAttribute="top" secondItem="quD-ye-njE" secondAttribute="top" id="dXk-T2-9ld"/>
+                <constraint firstItem="Tw3-85-uvG" firstAttribute="leading" secondItem="tJ6-4k-CIW" secondAttribute="trailing" id="tHh-NL-mkQ"/>
+                <constraint firstAttribute="bottom" secondItem="Tw3-85-uvG" secondAttribute="bottom" id="tKH-5v-bNQ"/>
+                <constraint firstAttribute="trailing" secondItem="ixl-cR-UpG" secondAttribute="trailing" id="tlO-eg-Lkb"/>
+                <constraint firstItem="tJ6-4k-CIW" firstAttribute="leading" secondItem="quD-ye-njE" secondAttribute="leading" id="zqe-i6-HaD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button1" destination="5PO-Z6-6cU" id="fTN-XM-Edd"/>
+                <outlet property="button2" destination="jvS-sM-YjW" id="TEN-Mi-pMa"/>
+                <outlet property="button3" destination="5UZ-kx-Qee" id="osR-uf-LJA"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="125"/>
+        </view>
+    </objects>
+</document>

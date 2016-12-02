@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUj-Md-nE9">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是假的tabBar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCf-4h-uvh">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yCf-4h-uvh" secondAttribute="trailing" id="Aoh-8g-lhY"/>
+                                    <constraint firstAttribute="bottom" secondItem="yCf-4h-uvh" secondAttribute="bottom" id="BLh-GU-3jh"/>
+                                    <constraint firstAttribute="height" constant="49" id="MXW-yn-rwz"/>
+                                    <constraint firstItem="yCf-4h-uvh" firstAttribute="top" secondItem="fUj-Md-nE9" secondAttribute="top" id="ffI-k7-nuB"/>
+                                    <constraint firstItem="yCf-4h-uvh" firstAttribute="leading" secondItem="fUj-Md-nE9" secondAttribute="leading" id="y4S-Pt-gad"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuI-fm-woF">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个假的NavigationBar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os5-Ou-aoA">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="os5-Ou-aoA" secondAttribute="trailing" id="BcT-Lk-eJP"/>
+                                    <constraint firstItem="os5-Ou-aoA" firstAttribute="leading" secondItem="JuI-fm-woF" secondAttribute="leading" id="QFt-aL-148"/>
+                                    <constraint firstAttribute="height" constant="64" id="nwV-LA-QtU"/>
+                                    <constraint firstItem="os5-Ou-aoA" firstAttribute="top" secondItem="JuI-fm-woF" secondAttribute="top" id="qc5-TM-Axh"/>
+                                    <constraint firstAttribute="bottom" secondItem="os5-Ou-aoA" secondAttribute="bottom" id="zlC-J4-AEd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fUj-Md-nE9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8dP-2c-bQl"/>
+                            <constraint firstItem="JuI-fm-woF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OZc-Do-H1W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fUj-Md-nE9" secondAttribute="bottom" id="WG7-PV-Umi"/>
+                            <constraint firstAttribute="trailing" secondItem="fUj-Md-nE9" secondAttribute="trailing" id="XRZ-Zm-ZAT"/>
+                            <constraint firstAttribute="trailing" secondItem="JuI-fm-woF" secondAttribute="trailing" id="w3B-le-awB"/>
+                            <constraint firstItem="JuI-fm-woF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wAo-QG-Pcl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yx7-MQ-Kf4"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="JuI-fm-woF" id="dcR-Q7-sRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="91"/>
+        </scene>
+    </scenes>
+</document>
